@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Portfolio</title>
 
         <!-- Fonts Style -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
         <script src="https://unpkg.com/feather-icons"></script>
 
         <!-- My Style CSS -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="CSS/style.css">
 
         <!-- Created by Robert Tanriwan -->
     </head>
@@ -34,17 +34,37 @@
         <!-- Contact Start -->
         <div class="contact-page">
             <section id="contact">
-                <form action="">
-                    <div class="input-group">
-                        <i data-feather="mail"></i>
-                        <input type="text" placeholder="Email">
+                <div id="contact-section">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <h4>Get in touch with me</h4>
+                        <input type="hidden" name="access_key" value= "${{ secrets.FORM_ACCESS_KEY }}">
+                        <div class="input-group">
+                            <i data-feather="mail"></i>
+                            <input type="text" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="input-group">
+                            <i data-feather="message-circle"></i>
+                            <input type="text" name="message" placeholder="Message">
+                        </div>
+                        <button type="submit" class="button">Send <i data-feather="arrow-right" class="icon-arrow"></i></button>
+                    </form>
+                    <div class="contact-right">
+                        <img src="IMG/astronaut.jpeg" alt="IMG">
                     </div>
-                    <div class="input-group">
-                        <i data-feather="message-circle"></i>
-                        <input type="text" placeholder="Message">
+                </div>
+                <div class="other-contact-opt">
+                    <h4>or contact me via</h4>
+                    <div class="content">
+                        <div class="contact-info" id="email">
+                            <i data-feather="mail" class="icon"></i>
+                            <span>robrtan1@gmail.com</span>
+                        </div>
+                        <div class="contact-info" id="linkedin">
+                            <i data-feather="linkedin" class="icon"></i>
+                            <a href="https://www.linkedin.com/in/roberttanriwan/">roberttanriwan</a>
+                        </div>
                     </div>
-                    <button type="submit" class="button">Send</button>
-                </form>
+                </div>
             </section>
         </div>
         <!-- Contact End -->
@@ -66,6 +86,6 @@
         </script>
 
         <!-- My Java Script -->
-        <script src="./script.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>

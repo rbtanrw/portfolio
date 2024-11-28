@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Portfolio</title>
 
         <!-- Fonts Style -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,10 @@
         <!-- Feather Icons -->
         <script src="https://unpkg.com/feather-icons"></script>
 
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
         <!-- My Style CSS -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="CSS/style.css">
 
         <!-- Created by Robert Tanriwan -->
     </head>
@@ -32,55 +34,127 @@
         <!-- Navbar End -->
 
         <!-- Project Start -->
-        <div class="project-page">
-            <section class="section-page" id="projects">
-                <div class="content" id="drinkmore">
+        <div class="swiper mySwiper project-page" id="projects">
+            <div class="swiper-wrapper">
+                <div class="project-content swiper-slide" id="drinkmore">
+                    <h5>DrinkMore</h5>
                     <div class="img-content">
-                        <img src="" alt="DrinkMore App">
+                        <img src="IMG/drinkmore/drinkmore.jpeg" alt="DrinkMore App">
                     </div>
                     <div class="desc">
-                        <h5>DrinkMore</h5>
-                        <p>A web-app to keep people hydrated by tracking their drinking action using deep learning.</p>
+                        <p>A web application to keep people hydrated, integrated with IoT for real-time temperature monitoring and AI for drinking action detection.</p>
+                        <br>
+                        <p>Main features of DrinkMore are:</p>
+                        <ul>
+                            <li>Real-time temperature detection</li>
+                            <li>Drinking reminder schedule based on current temperature</li>
+                            <li>Notification for drinking reminder</li>
+                            <li>Drinking action detection which will automatically turn off the ongoing notification</li>
+                        </ul>
+                        <br>
+                        <p>In this project, I contributed as an AI Engineer and Website Developer.</p>
                     </div>
+                    <a href="https://github.com/ellenaitsme/DrinkMore" target="_blank" rel="noopener noreferrer" class="project-content-button">
+                        <div class="project-button-page">Github</div>
+                        <div class="project-button-page link-icon">
+                            <i data-feather="external-link"></i>
+                        </div>
+                    </a>
                 </div>
-                <div class="content" id="pesenpilem">
-                    <div class="desc">
-                        <h5>PesenPilem</h5>
-                        <p>A full stack web-app for online movie ticket order.</p>
-                    </div>
+                <div class="project-content swiper-slide" id="pesenpilem">
+                    <h5>PesenPilem</h5>
                     <div class="img-content">
-                        <img src="" alt="PesenPilem">
+                        <img src="IMG/pesenpilem/pesenpilem.jpeg" alt="PesenPilem">
                     </div>
+                    <div class="desc">
+                        <p>A full stack web application for online movie ticket ordering. The front-end was built using React JS, while the back-end was built using ASP.NET Core. For the database, it uses SQL Server.</p>
+                        <br>
+                        <p>PesenPilem has the functions to:</p>
+                        <ul>
+                            <li>Login and Sign Up</li>
+                            <li>See "Now Showing" Movies</li>
+                            <li>Book Seats</li>
+                            <li>See Transaction History and Details</li>
+                            <li>(For ADMIN) Post and Delete Movies</li>
+                        </ul>
+                        <br>
+                        <p>In this project, I contributed fully as a back-end developer.</p>
+                    </div>
+                    <a href="https://github.com/rbtanrw/pesenpilem" target="_blank" rel="noopener noreferrer" class="project-content-button">
+                        <div class="project-button-page">Github</div>
+                        <div class="project-button-page link-icon">
+                            <i data-feather="external-link"></i>
+                        </div>
+                    </a>
                 </div>
-                <div class="content" id="sleepbuddy">
+                <div class="project-content swiper-slide" id="sleepbuddy">
+                    <h5>SleepBuddy</h5>
                     <div class="img-content">
-                        <img src="" alt="SleepBuddy">
+                        <img src="IMG/sleepbuddy/sleepbuddy.png" alt="SleepBuddy">
                     </div>
                     <div class="desc">
-                        <h5>SleepBuddy</h5>
-                        <p>A full stack web app for online hotel room reservation.</p>
+                        <p>An online website for remote hotel room reservation. The front-end was built using HTML, CSS, JS, while the back-end was built using ASP.NET Core. For the database, it uses SQL Server.</p>
+                        <p>Unfortunately, SleepBuddy is not fully developed, since its front-end and its back-end are still not connected.</p>
+                        <br>
+                        <p>In this project, I contributed fully as a back-end developer.</p>
+                        <br>
+                        <p>SleepBuddy's backend has some functions:</p>
+                        <ul>
+                            <li>Login, Sign Up, and Edit Profile</li>
+                            <li>Search Hotels by Name, Rating, or City</li>
+                            <li>Check Availability of Rooms</li>
+                            <li>Reserve Rooms</li>
+                            <li>Check Payments History</li>
+                        </ul>
                     </div>
+                    <a href="https://github.com/rbtanrw/sleepbuddy" target="_blank" rel="noopener noreferrer" class="project-content-button">
+                        <div class="project-button-page">Github</div>
+                        <div class="project-button-page link-icon">
+                            <i data-feather="external-link"></i>
+                        </div>
+                    </a>
                 </div>
-                <div class="content" id="plant">
+                <div class="project-content swiper-slide" id="plant">
+                    <h5>Plant Disease Detection Using Deep Learning</h5>
+                    <div class="img-content">
+                        <img src="IMG/ai_dl/inception_v3.png" alt="Inception-V3">
+                    </div>
                     <div class="desc">
-                        <h5>Plant Disease Detection Using Deep Learning</h5>
                         <p>A research to compare different deep learning models for plant disease detection. The models compared are VGG-16, ResNet-50, ResNet-101, and Inception-V3.</p>
                     </div>
-                    <div class="img-content">
-                        <img src="" alt="VGG-16 Model">
-                    </div>
+                    <a href="https://github.com/rbtanrw/plant-disease-detection" target="_blank" rel="noopener noreferrer" class="project-content-button">
+                        <div class="project-button-page">Github</div>
+                        <div class="project-button-page link-icon">
+                            <i data-feather="external-link"></i>
+                        </div>
+                    </a>
                 </div>
-                <div class="content" id="wearhouse">
+                <div class="project-content swiper-slide" id="wearhouse">
+                    <h5>WearHouse</h5>
                     <div class="img-content">
-                        <img src="" alt="WearHouse">
+                        <img src="IMG/wearhouse/wearhouse.png" alt="WearHouse">
                     </div>
                     <div class="desc">
-                        <h5>WearHouse</h5>
-                        <p>A full stack web app for online clothes and wearables purchases</p>
+                        <p>A web app for online clothes and wearables purchases. The front-end was built using HTML, CSS, while the back-end was built using ASP.NET Core. For the database, it uses SQL Server.</p>
+                        <p>Unfortunately, WearHouse is not fully developed, since its front-end and its back-end are still not connected.</p>
+                        <br>
+                        <p>WearHouse's backend has the features of:</p>
+                        <ul>
+                            <li>Login and Sign Up</li>
+                            <li>Search Category</li>
+                            <li>Post and Delete Category</li>
+                        </ul>
                     </div>
-
+                    <a href="https://github.com/rbtanrw/wearhouse" target="_blank" rel="noopener noreferrer" class="project-content-button">
+                        <div class="project-button-page">Github</div>
+                        <div class="project-button-page link-icon">
+                            <i data-feather="external-link"></i>
+                        </div>
+                    </a>
                 </div>
-            </section>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
         <!-- Project End -->
 
@@ -100,7 +174,9 @@
         feather.replace();
         </script>
 
+        <!-- Swiper JS -->
+        <script src="JS/swiper-bundle.min.js"></script>
         <!-- My Java Script -->
-        <script src="./script.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>

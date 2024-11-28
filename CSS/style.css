@@ -1,0 +1,346 @@
+:root{
+    --primary: #ffffff;
+    --bg: #000000;
+    --btn: #202020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--bg);
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato";
+    font-size: 25px;
+}
+
+svg {
+    background-color: transparent;
+}
+
+h3 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 5vh 15%;
+    font-size: 20px;
+    border-bottom: 1px solid var(--primary);
+    font-family: "Lato";
+}
+
+.navbar .selected {
+    border-bottom: 2px solid var(--primary);
+}
+
+section {
+    margin: 0 5% 30vh 5%;
+}
+
+#home {
+    height: 90vh;
+    align-content: center;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-size: 80px;
+}
+
+#home h3 {
+    margin-left: 3px;
+    width: fit-content;
+    border-bottom: 2px solid var(--primary);
+}
+
+#home .cv-button .cv-button-home {
+    font-weight: bold;
+    color: var(--primary);
+    background-color: var(--btn);
+    margin-right: 1vw;
+}
+
+#home .cv-button-home i {
+    margin: 0;
+}
+
+#home .cv-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 8vh 0;
+    padding: 2vh 3vw;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    color: var(--primary);
+    background-color: var(--btn);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.desc,
+.img-content {
+    width: 50%;
+}
+
+.desc p {
+    text-align: justify;
+}
+
+h5 {
+    font-size: 40px;
+    margin-bottom: 2vh;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button a{
+    margin: 8vh 0;
+    padding: 3vh 5vw;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    background-color: var(--btn);
+}
+
+.img-content img {
+    margin: 0 5%;
+    width: 90%;
+}
+
+#contact .content {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.contact-info {
+    display: flex;
+    align-content: center;
+}
+
+.contact-info span,
+.contact-info a {
+    margin-left: 10px;
+}
+
+svg {
+    width: 35px;
+    height: 35px;
+}
+
+.foot {
+    padding: 5vh 0;
+    border-top: 2px solid var(--primary);
+}
+
+.foot .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.foot .credit {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 2vh;
+}
+
+.about-page {
+    margin-top: 10vh;
+}
+
+.section-page {
+    margin: 0 5% 10vh 5%;
+}
+
+.about-page .button-about {
+    display: flex;
+    justify-content: center;
+}
+
+.about-page .button-about #about-button-page,
+.project-page .project-content-button {
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    background-color: var(--btn);
+    padding: 2vh 3vw;
+    margin: 5vh 0;
+}
+
+.project-page,
+.experience-page {
+    width: 100%;
+    height: 100%;
+    margin-top: 5vh;
+}
+
+.project-page .project-content,
+.experience-page .experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.project-page .swiper-slide img,
+.experience-page .swiper-slide img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-page .project-content-button .project-button-page {
+    color: var(--primary);
+    background-color: var(--btn);
+    margin-right: 1vw;
+}
+
+.project-page .project-content-button .link-icon {
+    margin: 0;
+}
+
+.project-page .project-content-button {
+    display: flex;
+    align-items: center;
+}
+
+.project-page .project-content ul,
+.experience-page .experience-content ul {
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.swiper-button-next {
+    color: var(--primary);
+    background-color: var(--bg);
+    margin-right: 3vw;
+}
+
+.swiper-button-prev {
+    color: var(--primary);
+    background-color: var(--bg);
+    margin-left: 3vw;
+}
+
+.experiences-page {
+    margin-top: 5vh;
+}
+
+.experience-page .experience-content {
+    margin-bottom: 5vh;
+}
+
+.contact-page {
+    margin-top: 0;
+}
+
+.contact-page #contact-section {
+    display: flex;
+    align-items: center;
+}
+
+.contact-page .contact-left {
+    margin-left: 15vw;
+    margin-right: 1vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4vh;
+}
+
+h4 {
+    font-size: 45px;
+    margin-bottom: 5vh;
+}
+
+.contact-page .contact-left h4 {
+    margin: 0;
+}
+
+.contact-page .input-group {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 2vh 2vw;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    background-color: var(--btn);
+}
+
+.contact-page .input-group input {
+    width: 80%;
+    margin-left: 1vw;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.contact-page .contact-left .button {
+    font-size: 25px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    background-color: var(--btn);
+}
+
+.contact-page .contact-left .button:hover {
+    cursor: pointer;
+}
+
+.contact-page .contact-left .button .icon-arrow {
+    background-color: var(--btn);
+    margin-left: 8px;
+    height: 4vh;
+    width: auto;
+}
+
+.contact-page .contact-right img {
+    height: 70vh;
+    width: auto;
+}
+
+.contact-page .other-contact-opt h4 {
+    margin: 3vh 0 5vh 0;
+    text-align: center;
+}
+
+.contact-page .other-contact-opt .content {
+    align-items: center;
+    justify-content: space-between;
+}
